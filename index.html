@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador de textos</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+</head>
+<body >
+  <h1 id="titulo1" >PALABRAS SECRETAS</h1>
+
+  <main class="main">
+    <section class="form box">
+      <form id="form-adicionar">
+      <h3 id="">Ingrese el texto aqui:</h3>
+        <textarea class="text-input"  id="textoEntrada" cols="25" rows="10" placeholder="Solo letras minúsculas, sin acento "></textarea>
+
+        <button id="encriptar" type="submit" class="btn btn-success">Encriptar</button>
+        <button id="desencriptar" type="submit" class="btn btn-danger">Desencriptar</button>
+        
+        <button id="borrar1" type="submit" class="btn btn-info">Borrar</button>
+        
+
+      </form>
+    </section>
+  
+    <section class="msg box">
+      <h2 id="">Mensaje encriptado:</h2>
+      
+      <textarea class="text-input"  id="textoSalida" cols="25" rows="10" placeholder="Aquí aparece el texto final "></textarea>
+      
+      <button id="copiar" type="submit" class="btn btn-info">Copiar</button>
+      <input id="borrar2" class="btn btn-info" type="reset" value="Borrar">
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+<footer class="py-5 bg-black">
+  <div class="container">
+    <p class="m-0 text-center text-white small">Copyright &copy; Industria Argentina-Hecho por Julio Gutierrez</p>
+  </div>
+ 
+</footer>
+
+
+</html>
